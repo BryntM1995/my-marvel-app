@@ -1,0 +1,14 @@
+.nav-link{
+    background: -webkit-linear-gradient(45deg, red, white 80%)  !important;
+    -webkit-background-clip: text  !important;
+    -webkit-text-fill-color: transparent !important;
+    font-weight: 800;
+    font-size: xx-large;
+    margin-left: 5px;
+    transition: ease-in 0.5s;
+}
+.nav-link:hover{
+    background: -webkit-linear-gradient(45deg, yellow, white 80%)  !important;
+    -webkit-background-clip: text  !important;
+    -webkit-text-fill-color: transparent !important;
+}

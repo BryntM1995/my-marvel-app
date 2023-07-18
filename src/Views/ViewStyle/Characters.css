@@ -1,0 +1,19 @@
+body{
+    background-image: url("../../Assets/BackgroundWp.webp");
+    background-repeat: round;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+.card-title{
+    text-overflow: ellipsis;
+}
+.card-img-top{
+    object-fit: fill !important;
+    height: 300px;
+    width: 100%;
+}
+
+.card{
+  height: 450px;
+}
