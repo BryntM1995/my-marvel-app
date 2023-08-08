@@ -1,42 +1,43 @@
 import "bootstrap/dist/css/bootstrap.css";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchData } from "../Store/Reducers/MarvelSlice";
 import "./ViewStyle/Characters.css";
 import { Link } from "react-router-dom";
+
+
+
 const Characters = () => {
-  const { loading, error, data } = useSelector((state) => state.data);
-  console.log(data);
+  //in addition to use (data) you can also use (pending and error) to render depending of the status.
+  const {  data } = useSelector((state) => state.data);
+  const [localData, setLocalData] = useState(null);
+  const cachedData = localStorage.getItem('cachedData');
 
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchData());
+    
+    if (cachedData !== null) {
+      setLocalData(JSON.parse(cachedData));
+    
+    } else {
+      dispatch(fetchData());
+      setLocalData(data);
+      localStorage.setItem('cachedData', JSON.stringify(data));
+    }
   }, [dispatch]);
 
-  if (loading) {
-    return <h1 className="text-center text-light bg-dark">Loading data....</h1>;
-  }
-
-  if (error) {
-    return (
-      <div className="bg-dark text-light text-center">
-        {" "}
-        Unsuccessful operation: {error}
-      </div>
-    );
-  }
-
-  if (data === null) {
+ 
+  if (localData === null) {
     return (
       <div className="bg-dark text-light text-center">La data esta null </div>
     );
   }
-  if (data !== null) {
+  if (localData !== null) {
     return (
-        <div className="container-fluid text-center">
+        <div className="container text-center">
           <div className="row row-cols-4">
-            {data.data.results.map((element) => (
+            {localData.data.results.map((element) => (
               <div className="col mb-2 md-2">
                 <div>
                   <div className="card">

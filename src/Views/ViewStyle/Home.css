@@ -1,51 +1,41 @@
 
-.Cpost{
-    object-fit: cover;
-   
+.carouselImg{
+    height:500px;
+    object-fit: fill;
 }
 .carouselSection{
     display: grid;
     place-items: center;
 }
-.carouselSection2{
-    display: grid;
-    place-items: end;
+.Cpost {
+    width: 70%;
+}
+.postTitle{
+    color: #fff;
+    background-color: red;
+    border-radius: 0px 50%;
+    text-align: center;
+    border: #fff ridge 3px;
+    font-weight: 900;
+    width: 80%;
+}
+.GettingStarted{
+    margin-top: 4px;
+    border-top: #fff  solid  2px;
+    width: 95%;
+    place-items: center;
+   
+}
+.portraitText{
+    border: #fff solid 3px;
+   background-color: red;
+    padding: 6px;
+    font-weight: 900;
+    width: 1000px;
+    text-align: center;
 }
 
-.carouselSection3{
-    display: grid;
-    place-items: start;
-}
 
-@media (min-width: 300px) and (max-width: 633px) {
-    .Cpost {
-      width: 250px;
-      height: 70px;
-    }
-}
-@media  (min-width: 634px) and  (max-width: 1087px) {
-    .Cpost {
-      width: 600px;
-      height: 100px;
-    }
-}
-
-
-@media (min-width: 1088px) and (max-width: 1920px) {
-    .Cpost {
-        height: 250px;
-        width: 1000px;
-    }
-}
-@media (min-width: 1921px) and (max-width: 3920px) {
-    .Cpost {
-        height: 450px;
-        width: 1900px;
-    }
-}
-@media (min-width: 3920px) and (max-width: 7920px) {
-    .Cpost {
-        height: 950px;
-        width: 4900px;
-    }
+.btn-danger{
+    width: 300px !important;
 }

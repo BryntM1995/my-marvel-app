@@ -2,8 +2,8 @@
     background: -webkit-linear-gradient(45deg, red, white 80%)  !important;
     -webkit-background-clip: text  !important;
     -webkit-text-fill-color: transparent !important;
-    font-weight: 800;
-    font-size: xx-large;
+    font-weight: 800 !important;
+    font-size: x-large !important;
     margin-left: 5px;
     transition: ease-in 0.5s;
 }
@@ -11,4 +11,10 @@
     background: -webkit-linear-gradient(45deg, yellow, white 80%)  !important;
     -webkit-background-clip: text  !important;
     -webkit-text-fill-color: transparent !important;
+}
+
+@media (min-width: 3920px) and (max-width: 7920px) {
+   .nav-link{
+    font-size: 70px !important;
+   }
 }

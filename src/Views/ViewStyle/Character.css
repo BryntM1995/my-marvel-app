@@ -1,3 +1,81 @@
 .mainPictureContainer{
-    place-items: start;
+    place-items: center;
+}
+.bground{
+    background-image: url("/src/Assets/Vengadores.jpg");
+    background-size: cover;
+    color: white;
+    border: ridge darkslategray 3px;
+    margin-bottom: 5px;
+    overflow: auto;
+}
+.comicContainer{
+    place-items: center;
+}
+.characterName{
+    text-align: center;
+}
+
+@media (min-width: 300px) and (max-width: 633px) {
+    .mainAvatar {
+      width: 200px;
+      height: 100px;
+    }
+    .bground{
+       width: 100px;
+       height: 75px;
+    }
+}
+@media  (min-width: 634px) and  (max-width: 1087px) {
+    .mainAvatar {
+      width: 350px;
+      height: 150px;
+    }
+    .bground{
+        width: 150px;
+        height: 100px;
+     }
+}
+
+
+@media (min-width: 1088px) and (max-width: 1921px) {
+    .mainAvatar {
+        height: 350px;
+        width: 650px;
+    } 
+    .bground{
+        width: 300px;
+        height: 175px;
+    }
+
+}
+@media (min-width: 1922px) and (max-width: 3920px) {
+    .mainAvatar {
+        height: 450px;
+        width: 1000px;
+    }
+    .bground{
+        width: 600px;
+        height: 275px;
+     }
+}
+@media (min-width: 3920px) and (max-width: 7920px) {
+    .mainAvatar {
+        height: 1950px;
+        width: 2200px;
+    }
+    .bground{
+        height: 750px;
+        width: 1075px;
+    }
+    .comicContainer{
+       height: fit-content;
+        width: 5075px;
+       
+    }
+    .characterName{
+        height: 359px;
+        width: 900px;
+        font-size: 145px;
+    }
 }
