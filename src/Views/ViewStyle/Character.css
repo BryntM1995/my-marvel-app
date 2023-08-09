@@ -78,4 +78,10 @@
         width: 900px;
         font-size: 145px;
     }
+    .card{
+        font-size: 60px;
+    }
+    .card-title{
+        font-size: larger;
+    }
 }

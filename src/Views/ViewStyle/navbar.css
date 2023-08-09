@@ -13,8 +13,13 @@
     -webkit-text-fill-color: transparent !important;
 }
 
+
+
+
+
 @media (min-width: 3920px) and (max-width: 7920px) {
    .nav-link{
     font-size: 70px !important;
+    margin-left: 20px;
    }
 }

@@ -53,15 +53,6 @@ function NavBar() {
                   Characters
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link text-light"
-                  aria-current="page"
-                  to="/Info"
-                >
-                  Info
-                </Link>
-              </li>
             </ul>
           </div>
         </div>

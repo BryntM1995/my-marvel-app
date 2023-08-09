@@ -57,8 +57,8 @@ function Character() {
             className="img-thumbnail mainAvatar"
             alt="..."
           />
-          <div className="container d-flex mainPictureContaine">
-            <h1 className="characterName bg-dark p-4 border border-light">
+          <div className="container d-grid mainPictureContainer">
+            <h1 className="characterName bg-dark p-4 border border-light text-light">
               {character[0].name}
             </h1>
           </div>
@@ -71,14 +71,17 @@ function Character() {
                   <div className="card-body">
                     <h5 className="card-title bg-dark p-2">{element.name}</h5>
                     <h6 className="card-subtitle bg-light mb-2 text-body-secondary">
-                      Card subtitle
+                      {character[0].description}
                     </h6>
                     <p className="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                      Want to get more info? check this link by clicking below!
                     </p>
-                    <a href={element.resourceURI} className="card-link">
-                      Card link
+                    <a
+                      href={`${character[0].urls[1].url}.${character[0].urls[1].type}`}
+                      target="_BLANK"
+                      className="card-link bg-dark p-2"
+                    >
+                      click here!
                     </a>
                   </div>
                 </div>

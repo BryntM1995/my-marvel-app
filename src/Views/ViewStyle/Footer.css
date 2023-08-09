@@ -1,17 +1,11 @@
-@media (min-width: 300px) and (max-width: 633px) {
-    
-}
-@media  (min-width: 634px) and  (max-width: 1087px) {
-   
-}
 
-
-@media (min-width: 1088px) and (max-width: 1920px) {
-   
-}
 @media (min-width: 1921px) and (max-width: 3920px) {
-   
+  Footer{
+    height: 1000px;
+  }
 }
 @media (min-width: 3920px) and (max-width: 7920px) {
-   
+    Footer{
+        height: 1200px;
+      }
 }
